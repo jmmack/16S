@@ -35,7 +35,7 @@ d.bf.0 <- d.col[apply(d.freq, 1, max)>0.01,]
 # Keep the OTU as long as the maximum frequency of the OTU in any one sample is greater than the cutoff
 ````
 
-Keep taxa with frequency of > 0.01 in *every* sample:
+Keep OTUs with frequency of > 0.01 in *every* sample:
 ````r
 d.bf.0 <- d.col[apply(d.freq, 1, min)>0.01,]
 
