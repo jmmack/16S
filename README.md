@@ -1,4 +1,4 @@
-# 16S
+# 16S Microbiome Analysis
 This repository is a collection of notes and scripts for 16S microbiome analysis
 
 ### Getting started
