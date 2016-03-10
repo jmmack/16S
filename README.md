@@ -11,13 +11,13 @@ Take note of the log file for information on program versions and parameters use
 
 ### What to do with your OTU table
 
-You will want to explore your data. This will be some combination of **QIIME (UniFrac)** analysis and **CoDa** (Compositional Data) Analysis.
+You will want to explore your data. This will be some combination of multivariate toolsets like **QIIME (UniFrac)** analysis and **CoDa** (Compositional Data) Analysis.
 - UniFrac is an analysis of *abundance*
 - CoDa is an anlaysis of *variance*
 
 Other things you'll probably want to do:
 - Plotting - use R. Including barplots, boxplots
-- Data massaging - you'll likely want to add/drop samples, filter OTUs, and change you data in some way for final analysis. This repository has some example R scripts to do some of these common tasks
+- Data manipulation - you'll likely want to add/drop samples, filter OTUs, and change you data in some way for final analysis. This repository has some example R scripts to do some of these common tasks
 - Differential analysis: you'll want to use ALDEx2
 
 It's highly recommended you spend time in the Gloor lab to examine your data. Every dataset is different and will have its own unique problems. We're here to help before you dig yourself into a pit you can't climb back out of....
