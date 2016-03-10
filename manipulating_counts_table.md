@@ -13,8 +13,9 @@ d<-read.table("/path/to/table.txt", sep="\t", quote="", check.names=F, header=T,
 #### Some tips
 Check your table dimensions (number of rows and number of columns)
 
-`dim(d)`
-
+````r
+dim(d)
+````
 ---
 
 ### Filtering OTUs (rows) by abundance per sample
