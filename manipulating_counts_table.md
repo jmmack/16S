@@ -2,7 +2,7 @@
 
 This is a general list of short R example code compiled by Jean to manipulate an counts table.
 
-The counts table will generally have your samples as columns, and your features as rows. "Features" refer to any of: OTUs, genes, taxonomic levels, sequence variant, etc. **I will generally use OTU or taxon to refer to the features in these examples**
+The counts table will generally have your samples as columns, and your features as rows. "Features" refer to any of: OTUs, genes, taxonomic levels, sequence variant, etc. **To simplify, I will generally use "OTU" to refer to the features in these examples**
 
 Your table should be imported into R using the read.table command
 
