@@ -1,3 +1,4 @@
+## Manipulating counts tables in R
 
 This is a general list of short R example code compiled by Jean to manipulate an counts table.
 
@@ -39,7 +40,7 @@ d.bf.0 <- d.col[apply(d.freq, 1, min)>0.01,]
 
 # Keep the OTU as long as the minimum frequency of the OTU in all samples is greater than the cutoff
 ````
-
+---
 ### Filtering OTUs (rows) by abundance across all samples
 
 Discard OTU if it is a zero in half or more of the samples
@@ -52,7 +53,7 @@ Remove OTUs with < 500 total counts (row sum < 500)
 count = 500
 d.0 <- data.frame(d.1[which(apply(d.1, 1, function(x){sum(x)}) > count),])
 ````
-
+---
 ### Remove samples (columns) by name
 
 ````r
