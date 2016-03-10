@@ -1,6 +1,6 @@
 ## Manipulating counts tables in R
 
-This is a general list of short R example code compiled by Jean to manipulate an counts table.
+This is a general list of short R example code compiled by Jean to manipulate a counts table.
 
 The counts table will generally have your samples as columns, and your features as rows. "Features" refer to any of: OTUs, genes, taxonomic levels, sequence variant, etc. **To keep things simple, I will generally use "OTU" to refer to the features in these examples**
 
