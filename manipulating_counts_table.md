@@ -70,4 +70,4 @@ for(i in 1:length(rem)){
 
 **WARNING**: As soon as you remove samples, you are removing counts from OTUs. THEREFORE you **must** re-filter your OTUs to an appropriate levels
 
-* *Example*: You filter your OTUs to a 1% abundance in any sample. Then you remove samples from your dataset. You must then run your 1% filter again because you have changed your count data by removing columns!*
+* *Example*: You filter your OTUs to a 1% abundance in any sample. Then you remove samples from your dataset. You must then run your 1% filter again because you have changed your count data by removing columns!
