@@ -8,6 +8,8 @@ Your table should be imported into R using the read.table command
 
 ````r
 d<-read.table("/path/to/table.txt", sep="\t", quote="", check.names=F, header=T, row.names=1)
+# use skip=1 if you have a metadata line before your headers (QIIME-style OTU table)
+# use comment.char="" if your header line starts with #
 ````
 ---
 #### Some tips
