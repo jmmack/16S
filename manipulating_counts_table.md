@@ -30,14 +30,14 @@ d.freq <- apply(d, 2, function(x){x/sum(x)})
 Keep OTUs with frequency of > 0.01 in *any* sample:
 
 ````r
-d.bf.0 <- d[apply(d.freq, 1, max)>0.01,]
+d.0 <- d[apply(d.freq, 1, max)>0.01,]
 
 # Keep the OTU as long as the maximum frequency of the OTU in any one sample is greater than the cutoff
 ````
 
 Keep OTUs with frequency of > 0.01 in *every* sample:
 ````r
-d.bf.0 <- d[apply(d.freq, 1, min)>0.01,]
+d.0 <- d[apply(d.freq, 1, min)>0.01,]
 
 # Keep the OTU as long as the minimum frequency of the OTU in all samples is greater than the cutoff
 ````
@@ -47,12 +47,12 @@ d.bf.0 <- d[apply(d.freq, 1, min)>0.01,]
 Discard OTU if it is a zero in half or more of the samples
 ````r
 cutoff = .5
-d.1 <- data.frame(d[which(apply(d, 1, function(x){length(which(x != 0))/length(x)}) > cutoff),])
+d.0 <- data.frame(d[which(apply(d, 1, function(x){length(which(x != 0))/length(x)}) > cutoff),])
 ````
 Remove OTUs with < 500 total counts (row sum < 500)
 ````r
 count = 500
-d.0 <- data.frame(d.1[which(apply(d.1, 1, function(x){sum(x)}) > count),])
+d.0 <- data.frame(d[which(apply(d, 1, function(x){sum(x)}) > count),])
 ````
 ---
 ### Remove samples (columns) by name
