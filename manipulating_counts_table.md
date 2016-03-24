@@ -30,14 +30,14 @@ d.freq <- apply(d, 2, function(x){x/sum(x)})
 Keep OTUs with frequency of > 0.01 in *any* sample:
 
 ````r
-d.bf.0 <- d.col[apply(d.freq, 1, max)>0.01,]
+d.bf.0 <- d[apply(d.freq, 1, max)>0.01,]
 
 # Keep the OTU as long as the maximum frequency of the OTU in any one sample is greater than the cutoff
 ````
 
 Keep OTUs with frequency of > 0.01 in *every* sample:
 ````r
-d.bf.0 <- d.col[apply(d.freq, 1, min)>0.01,]
+d.bf.0 <- d[apply(d.freq, 1, min)>0.01,]
 
 # Keep the OTU as long as the minimum frequency of the OTU in all samples is greater than the cutoff
 ````
