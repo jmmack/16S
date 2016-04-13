@@ -57,6 +57,7 @@ count = 500
 d.0 <- data.frame(d[which(apply(d, 1, function(x){sum(x)}) > count),])
 ````
 ---
+#DON'T USE THIS. IT DOESN'T WORK
 ### Remove samples (columns) by name
 
 ````r
