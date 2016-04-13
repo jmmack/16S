@@ -57,18 +57,24 @@ count = 500
 d.0 <- data.frame(d[which(apply(d, 1, function(x){sum(x)}) > count),])
 ````
 ---
-#DON'T USE THIS. IT DOESN'T WORK
-### Remove samples (columns) by name
+### Select or remove samples (columns) by name
 
+Using an inclusion list (list of sample to keep)
 ````r
-# Give a list (vector) of column names you want to get rid of
+# Vector of column names to keep for analysis
+BV1<-c("006A", "009A", "010A", "012A")
+BV2<-c("008A", "013A", "016B", "012B", "014B", "017B", "018B", "27S")
+
+# Concatenate two vectors together to pull the data
+df<-d[,c(BV1, BV2)]
+````
+
+Using an exclusion list (list of samples *not* to include)
+````r
+# Give a list (vector) of column names you want to EXCLUDE (get rid of)
 rem<-c("100bvvc", "109bvvc", "110bvvc", "127bvvc", "128bvvc", "133bvvc", "134bvvc", "147bvvc", "148bvvc", "151bvvc", "152bvvc", "161bvvc", "162bvvc", "177bvvc", "178bvvc", "179bvvc", "180bvvc", "83bvvc", "84bvvc", "87bvvc", "88bvvc", "91bvvc", "92bvvc", "97bvvc", "98bvvc", "99bvvc")
 
-
-for(i in 1:length(rem)){
-	d[,i]<-NULL
-}
-
+df <- d[, !names(d) %in% rem] 
 ````
 
 **WARNING**: As soon as you remove samples, you are removing counts from OTUs. THEREFORE you **must** re-filter your OTUs to an appropriate levels
