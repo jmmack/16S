@@ -77,6 +77,6 @@ rem<-c("100bvvc", "109bvvc", "110bvvc", "127bvvc", "128bvvc", "133bvvc", "134bvv
 df <- d[, !names(d) %in% rem] 
 ````
 
-**WARNING**: As soon as you remove samples, you are removing counts from OTUs. THEREFORE you **must** re-filter your OTUs to an appropriate levels
+**WARNING**: As soon as you remove samples (or select a subset of samples), you are removing counts from OTUs. THEREFORE you **must** re-filter your OTUs to an appropriate levels
 
 * *Example*: You filter your OTUs to a 1% abundance in any sample. Then you remove samples from your dataset. You must then run your 1% filter again because you have changed your count data by removing columns!
