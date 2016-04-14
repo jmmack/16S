@@ -18,6 +18,19 @@ Check your table dimensions (number of rows and number of columns)
 ````r
 dim(d)
 ````
+Look at your column or row names
+
+````r
+colnames(d)
+rownames(d)
+````
+
+See the top of your table
+````r
+head(d)
+````
+
+Do these frequently. Whenever you change/manipulate/make a new table. Make sure your data looks OK before moving on
 ---
 
 ### Filtering OTUs (rows) by abundance per sample
