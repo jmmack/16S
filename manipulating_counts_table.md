@@ -77,7 +77,7 @@ rem<-c("100bvvc", "109bvvc", "110bvvc", "127bvvc", "128bvvc", "133bvvc", "134bvv
 df <- d[, !names(d) %in% rem] 
 ````
 
-### Grep for sample sames (partial match)
+### Grep for sample names (partial match)
 
 ````r
 # Will pull all columns with a header containing "TM"
