@@ -43,6 +43,11 @@ d.0 <- d[apply(d.freq, 1, min)>0.01,]
 
 # Keep the OTU as long as the minimum frequency of the OTU in all samples is greater than the cutoff
 ````
+Discard OTUs with a mean count <=1 across all samples
+````r
+count <- 1
+d.1 <- data.frame(d[which(apply(d, 1, function(x){mean(x)}) > count),], check.names=F)
+````
 ---
 ### Filtering OTUs (rows) by abundance across all samples
 
