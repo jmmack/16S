@@ -30,6 +30,18 @@ See the top of your table
 head(d)
 ````
 
+Check the sparsity (number of zeros) in your table
+````r
+# How many zeros
+sum(d == 0)
+
+# How many non-zeros
+sum(d != 0)
+
+# remember: dim() will give you the dimensions of your table (assuming you imported your headers and row names correctly)
+#   You can do math in R to multiple number of rows by number of columns X*Y
+````
+
 Do these frequently. Whenever you change/manipulate/make a new table. Make sure your data looks OK before moving on
 ---
 
