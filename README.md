@@ -1,8 +1,13 @@
 # 16S Microbiome Analysis
 This repository is a collection of notes and scripts for 16S microbiome analysis in the Gloor lab
 
+### Before getting started
+You will need some familiarity and comfort using `command line` and `R`
+
+You need to know the details of your experiment. You should have a metadata table of all the information you've collected about your samples including clinical (age, weight, conditions, etc.) and procedural (extraction dates, amplification quantification, barcodes used, etc.)
+
 ### Getting started
-You should use the miseq workflow to prepare your OTU table
+You should use the miseq workflow to prepare your OTU table from your Illumina reads
 https://github.com/ggloor/miseq_bin
 
 This workflow will take your V4 (or other variable region) sequencing output and generate an OTU table with taxonomic annotations
