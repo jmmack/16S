@@ -8,7 +8,7 @@ You need to know the details of your experiment. You should have a metadata tabl
 
 ### Getting started
 You should use the miseq workflow to prepare your OTU table from your Illumina reads
-https://github.com/ggloor/miseq_bin (scroll down for the README)
+https://github.com/ggloor/miseq_bin (**scroll down** for the README)
 
 This workflow will take your V4 (or other variable region) sequencing output and generate an OTU table with taxonomic annotations
 
