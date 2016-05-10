@@ -1,5 +1,5 @@
 # 16S Microbiome Analysis
-This repository is a collection of notes and scripts for 16S microbiome analysis in the Gloor lab
+This repository is a collection of notes and scripts for 16S microbiome analysis in the Gloor lab written by Jean Macklaim
 
 ### Before getting started
 You will need some familiarity and comfort using `command line` and `R`
