@@ -18,9 +18,9 @@ You will want to explore your data. This will be some combination of multivariat
 - CoDa is an anlaysis of *variance*
 
 Other things you'll probably want to do:
-- Plotting - use R. Including barplots, boxplots. Some of my example R scripts -   [HERE](https://github.com/mmacklai/example-scripts/tree/master/R)
-- Data manipulation - you'll likely want to add/drop samples, filter OTUs, and change you data in some way for final analysis. **This repository has some example R scripts to do some of these common tasks** - e.g. [HERE](https://github.com/mmacklai/16S/blob/master/manipulating_counts_table.md)
-- Differential analysis: you'll want to use ALDEx2 - example [HERE](https://github.com/mmacklai/example-scripts/tree/master/aldex2)
+- **Plotting**: use R. Including barplots, boxplots. Some of my example R scripts -   [HERE](https://github.com/mmacklai/example-scripts/tree/master/R)
+- **Data manipulation**: you'll likely want to add/drop samples, filter OTUs, and change you data in some way for final analysis. _This repository has some example R scripts to do some of these common tasks_ - e.g. [HERE](https://github.com/mmacklai/16S/blob/master/manipulating_counts_table.md)
+- **Differential analysis**: you'll want to use ALDEx2 - example [HERE](https://github.com/mmacklai/example-scripts/tree/master/aldex2)
 
 It's highly recommended you spend time in the Gloor lab to examine your data. Every dataset is different and will have its own unique problems. We're here to help before you dig yourself into a pit you can't climb back out of....
 
