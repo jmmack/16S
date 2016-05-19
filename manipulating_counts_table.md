@@ -53,18 +53,36 @@ d.freq <- apply(d, 2, function(x){x/sum(x)})
 
 # apply can be by row (1) or column (2)
 ````
+What if you have a taxonomy column at the end of your table?
+````r
+tax<-d$taxonomy #by column name
+d.freq <- apply(d[,1:ncol(d)-1], 2, function(x){x/sum(x)})
+
+# Put the taxonomy column back in (as long as you haven't removed rows or changed the row order)
+cbind(d.freq, tax)
+
+### OR ###
+# Make taxonomy your rownames, and rmoeve the column
+rownames(d)<-d$taxonomy
+d$taxonomy <- NULL
+
+### OR ####
+# Make taxonomy PLUS OTU number your rownames
+rownames(d)<-paste(rownames(d), d$taxonomy, sep=";")
+d$taxonomy <- NULL
+````
 
 Keep OTUs with frequency of > 0.01 in *any* sample:
 
 ````r
-d.0 <- d[apply(d.freq, 1, max)>0.01,]
+d.0 <- d.freq[apply(d.freq, 1, max)>0.01,]
 
 # Keep the OTU as long as the maximum frequency of the OTU in any one sample is greater than the cutoff
 ````
 
 Keep OTUs with frequency of > 0.01 in *every* sample:
 ````r
-d.0 <- d[apply(d.freq, 1, min)>0.01,]
+d.0 <- d.freq[apply(d.freq, 1, min)>0.01,]
 
 # Keep the OTU as long as the minimum frequency of the OTU in all samples is greater than the cutoff
 ````
