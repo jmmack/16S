@@ -57,19 +57,6 @@ What if you have a taxonomy column at the end of your table?
 ````r
 tax<-d$taxonomy #by column name
 d.freq <- apply(d[,1:ncol(d)-1], 2, function(x){x/sum(x)})
-
-# Put the taxonomy column back in (as long as you haven't removed rows or changed the row order)
-cbind(d.freq, tax)
-
-### OR ###
-# Make taxonomy your rownames, and rmoeve the column
-rownames(d)<-d$taxonomy
-d$taxonomy <- NULL
-
-### OR ####
-# Make taxonomy PLUS OTU number your rownames
-rownames(d)<-paste(rownames(d), d$taxonomy, sep=";")
-d$taxonomy <- NULL
 ````
 
 Keep OTUs with frequency of > 0.01 in *any* sample:
@@ -136,3 +123,23 @@ df<-as.matrix(d[,grep("TM", colnames(d))])
 **WARNING**: As soon as you remove samples (or select a subset of samples), you are removing counts from OTUs. THEREFORE you **must** re-filter your OTUs to an appropriate levels
 
 * *Example*: You filter your OTUs to a 1% abundance in any sample. Then you remove samples from your dataset. You must then run your 1% filter again because you have changed your count data by removing columns!
+
+
+
+
+----------------
+##### Other stuff to add later
+````r
+# Put the taxonomy column back in (as long as you haven't removed rows or changed the row order)
+cbind(d.freq, tax)
+
+### OR ###
+# Make taxonomy your rownames, and rmoeve the column
+rownames(d)<-d$taxonomy
+d$taxonomy <- NULL
+
+### OR ####
+# Make taxonomy PLUS OTU number your rownames
+rownames(d)<-paste(rownames(d), d$taxonomy, sep=";")
+d$taxonomy <- NULL
+````
