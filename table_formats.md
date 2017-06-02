@@ -52,6 +52,7 @@ Note:
 Some columns you probably want to include in your matadata table
 - Sample ID
 - Timepoint
+- Group _(e.g. treatment group, or control vs disease)_
 - Left barcode
 - Right barcode
 - Date of extraction
