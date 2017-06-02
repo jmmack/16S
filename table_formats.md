@@ -2,6 +2,9 @@ You need TWO table inputs to explore your data. 1) An OTU counts table and 2) a 
 
 BOTH tables should be **Plain text, UNIX-encoded, tab-separated**
 
+You *can* make your metadata table in Excel, and save as .txt tab-delimited
+- If you do this, you may need to open your table in a prgoram like [TextWrangler](http://www.barebones.com/products/textwrangler/) (Mac) or [NotePad++](https://notepad-plus-plus.org) (Windows)* (see footnote below) or [Atom](https://atom.io) (Mac and Windows) to ensure the encoding and whitespaces are correct
+
 ### 1) OTU table format
 
 - Columns are sample IDs
@@ -9,8 +12,6 @@ BOTH tables should be **Plain text, UNIX-encoded, tab-separated**
 - Values are integers (counts)
 - Plain text, UNIX-encoded, tab-separated
 
-You *can* make your OTU table in Excel (although this is not recommended), and save as .txt tab-delimited
-- If you do this, you may need to open your table in a prgoram like [TextWrangler](http://www.barebones.com/products/textwrangler/) (Mac) or [NotePad++](https://notepad-plus-plus.org) (Windows)*(see footnote below) or [Atom](https://atom.io) (Mac and Windows) to ensure the encoding and whitespaces are correct
 
 ##### Good practices to follow
 - Do *not* use spaces or special characters in your header names. e.g. instead of `Sample #15 Baseline` use `s15_B`
