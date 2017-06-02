@@ -34,6 +34,25 @@ QIIME-style OTU tables are OK, but you will have to convert your .biom table to 
 In addition to your counts table, you likely want a table of information about your samples. The same priciples apply for formatting as above. Download an example here:  
 https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data
 
+##### Example:
+		Sample_ID	time	study	probio	age	a_dis	a_whiff	a_ph	a_clue	n_status
+		s1_t0	0	b_cont	NA	41	n	n	0	ND	n
+		s1_t1	1	b_cont	NA	36	n	n	0	ND	n
+		s2_t0	0	b_cont	NA	45	n	n	0	ND	n
+
+Note:
+- The Sample Ids in your meta must match EXACLTY what is in your OTU table. Any sample that occurs in your OTU table MUST also occur in your metadata table
+- Be consistent in your columns: Don't use "yes", "y", and "Y" as these are all different characters.
+- Please only use only alphanumeric characters and "\_" and "\-" and space. NO quotes, asterisks, or funny characters of any sort
+
+Some columns you probably want to include in your matadata table
+- Sample ID
+- Timepoint
+- Left barcode
+- Right barcode
+- Date of extraction
+- Date of collection
+
 
 ---------
 ###### Footnotes
