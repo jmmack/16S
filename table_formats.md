@@ -42,7 +42,7 @@ https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data
 		Sample_ID	time	study	probio	age	a_dis	a_whiff	a_ph	a_clue	n_status
 		s1_t0	0	b_cont	NA	41	n	n	0	ND	n
 		s1_t1	1	b_cont	NA	36	n	n	0	ND	n
-		s2_t0	0	b_cont	NA	45	n	n	0	ND	n
+		s2_t0	0	b_cont	NA	45	y	y	1	y	BV
 
 Note:
 - The Sample Ids in your meta must match EXACLTY what is in your OTU table. Any sample that occurs in your OTU table MUST also occur in your metadata table
