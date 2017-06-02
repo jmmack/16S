@@ -59,7 +59,7 @@ Some columns you probably want to include in your matadata table
 - Date of collection
 - Qubit value after PCR amplification _(this is ESPECIALLY IMPORANT to evaluate negative controls)_
 
-You want to be able to examine and (hopefully) rule out any technical variation in the structure of your data. It's therefore VERY important to include as much information about your samples as possible, even if you think it may not have an impact (becasue it might!)
+You want to be able to examine and (hopefully) rule out any technical variation in the structure of your data. It's therefore VERY important to include as much information about your samples as possible, even if you think it may not have an impact (becasue it might!). We OFTEN see bias due to L-barcode, low quibit/amplification, date of extraction....
 
 ---------
 ###### Footnotes
