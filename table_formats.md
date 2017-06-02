@@ -3,7 +3,7 @@ You need TWO table inputs to explore your data. 1) An OTU counts table and 2) a 
 BOTH tables should be **Plain text, UNIX-encoded, tab-separated**
 
 You *can* make your metadata table in Excel, and save as .txt tab-delimited
-- If you do this, you may need to open your table in a prgoram like [TextWrangler](http://www.barebones.com/products/textwrangler/) (Mac) or [NotePad++](https://notepad-plus-plus.org) (Windows)* (see footnote below) or [Atom](https://atom.io) (Mac and Windows) to ensure the encoding and whitespaces are correct
+- If you do this, you may need to open your table in a prgoram like [TextWrangler](http://www.barebones.com/products/textwrangler/) (Mac) or [Atom](https://atom.io) (Mac and Windows) or [NotePad++](https://notepad-plus-plus.org) (Windows)* (see footnote below) to ensure the encoding and whitespaces are correct
 
 ### 1) OTU table format
 
