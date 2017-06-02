@@ -19,11 +19,10 @@ You *can* make your metadata table in Excel, and save as .txt tab-delimited
 - Be as concise, but as informative as possible in your naming. Use short forms and include timepoint information etc. (see example above)
 
 ##### Example:
-| OTU_ID | s1_t1 | s1_t2 | s2_t1 | s2_t2 |
-|--------|-------|-------|-------|-------|
-| 0      | 34    | 23    | 456   | 469   |
-| 1      | 564   | 342   | 54    | 243   |
-| 2      | 4     | 56    | 76    | 345   |
+		OTU_ID	s1_t1	s1_t2	s2_t1	s2_t2
+		0	34	23	456	469
+		1	564	342	54	243
+		2	4	56	76	345
 
 Download an example OTU table here:  
 https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data
