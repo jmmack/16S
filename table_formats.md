@@ -1,4 +1,8 @@
-#### OTU table format
+You need TWO table inputs to explore your data. 1) An OTU counts table and 2) a table of metadata. See below for a description, and download examples [here](https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data)
+
+BOTH tables should be **Plain text, UNIX-encoded, tab-separated**
+
+### 1) OTU table format
 
 - Columns are sample IDs
 - Rows are OTUs or features
@@ -29,7 +33,7 @@ QIIME-style OTU tables are OK, but you will have to convert your .biom table to 
 `convert_biom.py -i otu_table.biom -o otu_table.txt -b --header_key='taxonomy"`
 
 ---------------
-#### metadata table format
+#### 2) Metadata table format
 
 In addition to your counts table, you likely want a table of information about your samples. The same priciples apply for formatting as above. Download an example here:  
 https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data
