@@ -15,7 +15,7 @@ You *can* make your metadata table in Excel, and save as .txt tab-delimited
 
 ##### Good practices to follow
 - Do *not* use spaces or special characters in your header names. e.g. instead of `Sample #15 Baseline` use `s15_B`
-  - "_" and "-" are good to use in place of spaces
+  - Underscore "_" is good to use in place of spaces
 - Be as concise, but as informative as possible in your naming. Use short forms and include timepoint information etc. (see example above)
 
 ##### Example:
