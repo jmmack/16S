@@ -38,7 +38,7 @@ It's highly recommended you spend time in the Gloor lab to examine your data. Ev
 
 ###### My branch of the miseq workflow
 _may be different (i.e. more up to date) from Greg's master branch_  
-https://github.com/ggloor/miseq_bin/tree/Jean
+https://github.com/ggloor/miseq_bin/
 
 ###### Example scripts in R, Perl, Bash, QIIME, etc.
 https://github.com/mmacklai/example-scripts
