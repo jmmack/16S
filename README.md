@@ -16,7 +16,10 @@ Take note of the log file for information on program versions and parameters use
 
 ### What to do with your OTU table
 
-At the end of the miseq workflow you will have a counts table with extimated taxonomy: usually called `td_OTU_tag_mapped_lineage.txt`
+At the end of the miseq workflow you will have a counts table with extimated taxonomy: usually called 
+```
+td_OTU_tag_mapped_lineage.txt
+```
 
 You will want to explore your data. This will be some combination of multivariate toolsets like **QIIME (UniFrac)** analysis and **CoDa** (Compositional Data) Analysis.
 - UniFrac is an analysis of *abundance*
@@ -38,7 +41,7 @@ It's highly recommended you spend time in the Gloor lab to examine your data. Ev
 
 ###### My branch of the miseq workflow
 _may be different (i.e. more up to date) from Greg's master branch_  
-https://github.com/ggloor/miseq_bin/tree/Jean
+https://github.com/ggloor/miseq_bin/
 
 ###### Example scripts in R, Perl, Bash, QIIME, etc.
 https://github.com/mmacklai/example-scripts
