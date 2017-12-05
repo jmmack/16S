@@ -1,4 +1,4 @@
-#1Feb2016 JM
+#Update: 5-Dec-2017 JM
 # Sum a counts table by taxonomic level (equivalent to QIIME's summarize_taxa.py function)
 # You can find example data here: https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data
 
