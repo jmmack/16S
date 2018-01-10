@@ -118,6 +118,14 @@ barplot(y[,s.order], space=0, col=colours, las=2, ylim=c(0,1))
 mtext("16S rRNA(V6) fraction", side=2, line=2.5)
 dev.off()
 
+#I am plotting the legend separately
 pdf('legendtest.pdf', height=10, width=8)
 barplot(y[,s.order], space=0, col=colours, ylim=c(-20,0), legend=T)
 dev.off()
+
+#------------------------------------------------------------
+# alternate method for the legend
+
+par(mar=c(5, 4, 4, 10), xpd = T)
+barplot(y, space=0, col=colours, las=2, legend.text = TRUE, args.legend = list(x = "topright", bty = "n", inset=c(-0.3, 0), cex=0.55))
+
