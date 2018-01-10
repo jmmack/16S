@@ -2,8 +2,6 @@
 # Make a proportional barplot
 # You can find example data here: https://github.com/mmacklai/example-scripts/tree/master/qiime_pipeline/test_data
 
-
-
 #-----------------------------------------------------------------------------------
 # Notes:
 #	This script will sum reads to genus level
