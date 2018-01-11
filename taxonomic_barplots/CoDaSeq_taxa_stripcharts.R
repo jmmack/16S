@@ -1,5 +1,6 @@
 #11-Jan-2018
-# I am trying to munge my data into format for GG's stripchart script contained in CoDaSeq
+#JM
+# I am trying to munge my data into format for GG's stripchart script contained in CoDaSeq (which was based on my SEED stripchart script based on AF's code)
 
 library(CoDaSeq)
 
