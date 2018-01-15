@@ -4,11 +4,12 @@
 
 #-----------------------------------------------------------------------------------
 # Notes:
-#	This script will sum reads to genus level
-#	Taxa below 1% abundance (total across ALL samples) will be groups as "remainder"
-#	WITHIN EACH SAMPLE taxa below 1% will be grouped into "remainder"
+#	- This script will sum reads to genus level
+#	- Taxa below 1% abundance (total across ALL samples) will be groups as "remainder"
+#	- WITHIN EACH SAMPLE taxa below 1% will be grouped into "remainder"
 #		(this is to reduce the visual clutter)
-
+#	- See also: the example in the microbiome tutortial here:https://github.com/ggloor/CoDa_microbiome_tutorial/wiki/Part-4:-Visual-Data-Exploration
+#		(this has some examples for filtering the SV before plotting)
 #-----------------------------------------------------------------------------------
 # Read in the table, and then collect the taxonomy column
 #-----------------------------------------------------------------------------------
