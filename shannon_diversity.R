@@ -5,8 +5,9 @@
 # Imagining a microbiome of 4 taxa. What happens to the Alpha Diversity (calc by Shannon's index) when the evenness changes
 # Remembering diversity is the number of things and the evenness (distribution of abundance) of those things
 
-#Shannon's diversity calculation
+#Shannon's diversity calculation. Use sapply for dataframes
 ds <- apply(d, 2, function(x) { -1 * sum( (x / sum(x) ) * log2(x / sum(x) )) })
+#ds <- sapply(d.1, function(x) { -1 * sum( (x / sum(x) ) * log2(x / sum(x) )) })
 
 # Notes
 #   Samples are columns, taxa are rows. Therefore we apply across columns (2)
