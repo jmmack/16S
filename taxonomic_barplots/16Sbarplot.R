@@ -64,15 +64,18 @@ agg6.b <- agg6[apply(agg6p, 1, max) < abund,]	#everything below cutoff
 #sum the remainder (below the cutoff) into one group
 x <- colSums(agg6.b, dims=1)
 
-#merge the above cutoff and the "remainder"
-p<-rbind(agg6.a,x)
+# get percent abundance to order the taxa
+agg6.ap<-apply(agg6.a, 2, function(x){x/sum(x)})
+# order the taxa from most to least abundant. This is so the largest fraction are plotted first
+
+agg6.ao<-agg6.a[order(rowSums(agg6.ap), decreasing = TRUE),]
+
+#merge the above cutoff and the "remainder" at the counts level
+p<-rbind(agg6.ao,x)
 rownames(p)[nrow(p)]<-"remainder"
 
-#get percent abundances
-pp <- apply(p, 2, function(x){x/sum(x)})
-
-#order the taxa from most to least abundant. This is so the largest fraction are plotted first
-y <- pp[order(rowSums(pp), decreasing = TRUE),]
+#get percent abundances for plotting
+y <- apply(p, 2, function(x){x/sum(x)})
 
 #check sample columns sums to 1 (100%)
 colSums(y)
