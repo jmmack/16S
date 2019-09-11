@@ -29,6 +29,7 @@ split<-strsplit(as.vector(tax), ";")
 #Sum all the reads by the 6th taxonomic level (separated by ;)
 # in sapply, <"[", 6> will pull the 6th element
 # It's equivalent to split6[[N]][6] where "N" is each lineage, and the 6th element is being pulled
+# The last value in the input here (6) is passed to the [ operator, meaning the operation x[6] is applied to every list element.
 split6 <- sapply(strsplit(as.character(tax), ";"), "[", 6)
 
 #6 is genus in this data set. Sum by genus
